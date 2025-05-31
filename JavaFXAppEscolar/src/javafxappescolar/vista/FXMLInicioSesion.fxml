@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLInicioSesionController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #68a2cc;">
+         <children>
+            <ImageView fitHeight="263.0" fitWidth="300.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recurso/furinakawai.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #a5cde2;">
+         <children>
+            <Label layoutX="77.0" layoutY="44.0" text="Bienvenido(a)" textFill="#3e00fa">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label layoutX="34.0" layoutY="79.0" prefHeight="76.0" prefWidth="244.0" text="Ingresa tu usuario y contraseña para acceder al sistema." textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="tfUsuario" layoutX="25.0" layoutY="174.0" prefHeight="31.0" prefWidth="244.0" />
+            <Button layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onAction="#btnClicVerificarSesion" text="Iniciar Sesión" />
+            <Label layoutX="28.0" layoutY="153.0" text="Usuario" />
+            <Label layoutX="28.0" layoutY="239.0" text="Contraseña" />
+            <Label fx:id="lbErrorUsuario" layoutX="28.0" layoutY="205.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrorContraseña" layoutX="29.0" layoutY="291.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tfContraseña" layoutX="25.0" layoutY="260.0" prefHeight="31.0" prefWidth="244.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
